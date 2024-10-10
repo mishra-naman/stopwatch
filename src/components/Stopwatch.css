@@ -1,0 +1,63 @@
+/* src/components/Stopwatch.css */
+body {
+  margin: 0; /* Remove default body margin */
+   /* Prevent scrolling */
+}
+
+.dark-mode-stopwatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  font-size: 400px; /* Set font size for the time display */
+}
+
+.dark-mode-stopwatch.light {
+  background-color: #f0f0f0; /* Light background */
+  color: #000; /* Light text color */
+}
+
+.dark-mode-stopwatch.dark {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Dark text color */
+}
+
+.stopwatch-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stopwatch-time {
+  margin-bottom: 1rem;
+  font-size: inherit; /* Inherit font size from the parent */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+}
+
+.stopwatch-buttons {
+  display: flex;
+  flex-direction: row; /* Align buttons in a line */
+  justify-content: center;
+}
+
+.stopwatch-buttons .small-button {
+  margin: 0 0.5rem; /* Space between buttons */
+  padding: 0; /* Remove default padding */
+  width: 50px; /* Fixed width for buttons */
+  height: 50px; /* Fixed height for buttons */
+  font-size: 0.7rem; /* Use a reasonable font size for button text */
+  border: none;
+  border-radius: 5px;
+  background-color: #ff5722; /* Button background color */
+  color: #ffffff; /* Button text color */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.stopwatch-buttons .small-button:hover {
+  background-color: #e64a19; /* Darker shade on hover */
+}

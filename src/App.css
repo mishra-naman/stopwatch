@@ -1,0 +1,32 @@
+/* src/App.css */
+
+body {
+  font-family: Arial, sans-serif; /* Set a default font */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  /* Prevent scrolling */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #ffffff; /* Default light background */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.app-container.dark {
+  background-color: #121212; /* Dark mode background */
+}
+
+h1 {
+  font-size: 2.5rem; /* Title font size */
+  color: #333; /* Title text color */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+h1.dark {
+  color: #ffffff; /* Title text color in dark mode */
+}
